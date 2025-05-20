@@ -93,7 +93,270 @@
     z-index: 1;
     position: relative;
 }
+:root {
+    --main-bg: #eaeaea;
+    --navbar-bg: #131921;
+    --search-bg: #fff;
+}
 
+/* Universal Styles */
+html, body {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: var(--main-bg);
+}
+
+/* Container */
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+/* Reusable Classes */
+.first-line {
+    font-size: 12px;
+    color: #ccc;
+}
+
+.second-line {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.ln-height {
+    line-height: 1.5;
+}
+
+.border {
+    padding: 6px 12px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    transition: border 0.2s;
+}
+
+.border:hover {
+    border: 1px solid #febd69;
+}
+
+/* Navbar */
+nav {
+    background: var(--navbar-bg);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 110px;
+    margin-right: 24px;
+    cursor: pointer;
+}
+
+.set-location {
+    color: #fff;
+    margin-right: 18px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+
+.search-box {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background: var(--search-bg);
+    border-radius: 4px;
+    margin: 0 16px;
+    overflow: hidden;
+}
+
+.search-box input {
+    border: none;
+    padding: 8px 12px;
+    width: 100%;
+    outline: none;
+    font-size: 15px;
+    background: transparent;
+}
+
+.search-box .icon {
+    background: #febd69;
+    padding: 8px 14px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.country-select {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+    color: #fff;
+    font-size: 13px;
+}
+
+.country-select img {
+    width: 20px;
+    margin-right: 6px;
+}
+
+.account-info, .orders, .cart {
+    padding: 0 10px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.account-info .first-line,
+.orders .first-line {
+    color: #ccc;
+    font-size: 12px;
+}
+
+.account-info .second-line,
+.orders .second-line {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.cart .cart-count {
+    background: #febd69;
+    color: #111;
+    border-radius: 50%;
+    padding: 2px 7px;
+    font-size: 13px;
+    font-weight: bold;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+}
+
+/* Menu Bar */
+.menuBar {
+    display: flex;
+    align-items: center;
+    background: #232f3e;
+    padding: 10px 20px;
+    gap: 18px;
+}
+
+.menuBar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 2px;
+    transition: background 0.2s;
+    font-size: 14px;
+}
+
+.menuBar a:hover {
+    background: #37475a;
+}
+
+/* Hero Section */
+.heroPage {
+    width: 100%;
+    min-height: 320px;
+    background: url('/images/hero-bg.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    margin-bottom: -120px;
+    z-index: 1;
+}
+
+/* Product Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 40px 20px 0 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.cardHeading {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #232f3e;
+    text-align: center;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+/* Footer */
+.socialHandle {
+    background: #232f3e;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 32px 20px;
+    flex-wrap: wrap;
+    gap: 32px;
+    font-size: 14px;
+}
+
+.sh-part-1, .sh-part-2, .sh-part-m {
+    flex: 1 1 200px;
+    margin: 0 12px;
+}
+
+.sh-part-1 {
+    min-width: 180px;
+}
+
+.sh-part-2 {
+    min-width: 180px;
+}
+
+.sh-part-m {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 120px;
+}
+
+.sh-part-m img {
+    width: 80px;
+    margin-bottom: 10px;
+}
 /* Product grid */
 .products {
     display: flex;
