@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header/NavBar -->
+    <header class="header">
+        <div class="header-left">
+            <div class="logo">
+                <a href="#">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo" height="40">
+                    <span class="logo-in">.in</span>
+                </a>
+            </div>
+            <div class="set-location">
+                <span>Deliver to</span>
+                <div>
+                    <span class="location-icon">📍</span>
+                    <span class="location-text">Pakistan</span>
+                    <a href="#" class="update-location">Update</a>
+                </div>
+            </div>
+        </div>
+        <div class="search-bar">
+            <select class="search-category">
+                <option value="all">All</option>
+                <option value="electronics">Electronics</option>
+                <option value="books">Books</option>
+                <option value="fashion">Fashion</option>
+                <!-- Add more categories as needed -->
+            </select>
+            <input type="text" placeholder="Search Amazon.in">
+            <button class="search-camera" title="Search by image">📷</button>
+            <button class="search-btn" title="Search">🔍</button>
+        </div>
+        <div class="header-right">
+            <div class="choose-country">
+                <span class="flag-icon">pk</span>
+                <select class="country-select">
+                    <option value="in">pk - English</option>
+                    <option value="us">US - English</option>
+                    <option value="fr">FR - Français</option>
+                    <!-- Add more countries/languages as needed -->
+                </select>
+            </div>
+            <div class="account-info">
+                <a href="#">Hello, Sign in<br><strong>Account &amp; Lists</strong></a>
+            </div>
+            <div class="orders">
+                <a href="#">Returns<br><strong>&amp; Orders</strong></a>
+            </div>
+            <div class="cart">
+                <a href="#">🛒<br><strong>Cart</strong></a>
+            </div>
+        </div>
+    </header>
+    <header class="header">
+        <div class="logo">
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo" height="40"></a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search Amazon">
+            <button>🔍</button>
+        </div>
+        <nav class="nav">
+            <a href="#">Sign In</a>
+            <a href="#">Orders</a>
+            <a href="#">Cart 🛒</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="banner">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/OHL/GW/June/Unrec/PC_Hero_3000x1200._CB603022774_.jpg" alt="Banner" width="100%">
+        </section>
+
+        <section class="products">
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/81-QB7nDh4L._AC_UL320_.jpg" alt="Product 1">
+                <h2>Echo Dot (4th Gen)</h2>
+                <p>$49.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/71K7Q4P9gKL._AC_UL320_.jpg" alt="Product 2">
+                <h2>Fire TV Stick</h2>
+                <p>$39.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/61Iz2yy2CKL._AC_UL320_.jpg" alt="Product 3">
+                <h2>Kindle Paperwhite</h2>
+                <p>$129.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/81vpsIs58WL._AC_UL320_.jpg" alt="Product 4">
+                <h2>Apple AirPods</h2>
+                <p>$159.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Amazon Clone. For educational purposes only.</p>
+    </footer>
+</body>
+</html>
